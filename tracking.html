@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your Amanda Delivery shipment online.">
+    <title>Track Your Package | Amanda Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">A</span>
+            <span>AMANDA<span class="logo-light"> DELIVERY</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Our Services</a></li>
+            <li><a href="tracking.html" class="active">Track Package</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <a href="index.html" class="nav-btn">Back Home ↗</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="tracking-hero">
+    <div class="container tracking-hero-content">
+        <span class="section-tag">SHIPMENT TRACKING</span>
+        <h1>Track Your <span>Delivery.</span></h1>
+        <p>
+            Get real-time shipment updates and stay informed
+            about the journey of your package.
+        </p>
+    </div>
+</section>
+
+<section class="tracking-section">
+    <div class="container">
+
+        <div class="tracking-box">
+            <div class="tracking-box-heading">
+                <span class="section-tag">TRACK & TRACE</span>
+                <h2>Where is your package?</h2>
+                <p>Enter your unique tracking number below.</p>
+            </div>
+
+            <form id="trackingForm" class="tracking-form">
+                <input
+                    type="text"
+                    id="trackingNumber"
+                    placeholder="e.g. AMD1001"
+                    required
+                >
+                <button type="submit">Track Shipment →</button>
+            </form>
+
+            <p class="tracking-hint">
+                <span>ⓘ</span> Your tracking number can be found
+                in your shipment confirmation.
+            </p>
+
+            <div id="trackingResult" class="tracking-result" aria-live="polite"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="tracking-help section-padding">
+    <div class="container help-grid">
+        <div>
+            <span class="section-tag">NEED ASSISTANCE?</span>
+            <h2>We're Here to Help.</h2>
+            <p>
+                Having trouble tracking your shipment?
+                Our support team is ready to assist you.
+            </p>
+            <a href="index.html#contact" class="btn-primary">Contact Support ↗</a>
+        </div>
+
+        <div class="help-card">
+            <div class="help-icon">✉</div>
+            <h3>Customer Support</h3>
+            <p>info@amandadelivery.com</p>
+            <p>+234 800 000 0000</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-bottom">
+        <p>© <span id="year"></span> Amanda Delivery. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
